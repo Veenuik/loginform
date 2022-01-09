@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="test">
+        this is test
+    </div>
+
+    <button onclick="myfunc(5,6,8,3)">click for text change </button>
+    
+</body>
+
+
+
+
+
+<script>
+
+function myfunc(p1,p2,p3,p4){
+    document.getElementById('test').innerHTML = '<h1>Text is changed</h1>'+p1+","+p2;   
+}
+    
+
+
+
+    var x = "John Doe"; //Global
+    let y = "John Doe"; //Global 
+    
+    {
+        var x = 0; // local
+        // let y = 0; // local
+        console.log(x,"1"); // 0
+        console.log(y,"2"); // 0
+
+    }
+
+    console.log(x,"3"); //0
+    console.log(y,"4"); // John Doe
+   
+    
+
+
+</script>
+</html>
